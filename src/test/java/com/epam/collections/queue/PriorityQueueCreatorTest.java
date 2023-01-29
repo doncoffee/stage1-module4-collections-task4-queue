@@ -45,6 +45,6 @@ public class PriorityQueueCreatorTest {
         PriorityQueueCreator creator = new PriorityQueueCreator();
         PriorityQueue<String> actualQueue = creator.createPriorityQueue(firstList, secondList);
         assertEquals(expectedPriorityQueueValues.size(), actualQueue.size());
-//        expectedPriorityQueueValues.forEach(expectedQueueValue -> assertEquals(expectedQueueValue, actualQueue.poll()));
+        expectedPriorityQueueValues.forEach(expectedQueueValue -> assertEquals(expectedQueueValue, actualQueue.poll()));
     }
 }
